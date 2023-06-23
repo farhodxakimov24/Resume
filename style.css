@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: rgb(227, 235, 238);
+    background: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,6 +139,9 @@ body{
     font-size: 14px;
     color: #848c99;
 }
+.contactInfo.language .text{
+    color: white;
+}
 .contactInfo.language .percent
 {
     position: relative;
@@ -170,6 +173,9 @@ body{
     background: #fff;
     padding: 40px;
     
+}
+p{
+    font-size: 15px;
 }
 .about
 {
