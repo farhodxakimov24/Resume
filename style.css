@@ -32,6 +32,9 @@ body{
     padding: 40px;
 
 }
+.container .left_Side p{
+    color: white;
+}
 .profileText
 {
     position: relative;

@@ -7,6 +7,31 @@
     <title>Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script>
+        function updateClock() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+
+            // Pad the minutes and seconds with leading zeros, if required
+            minutes = (minutes < 10 ? "0" : "") + minutes;
+            seconds = (seconds < 10 ? "0" : "") + seconds;
+
+            // Choose between "AM" and "PM" as appropriate
+            var period = (hours < 12) ? "AM" : "PM";
+
+            // Convert the hours to 12-hour format
+            hours = (hours > 12) ? hours - 12 : hours;
+
+            // Display the live time
+            var timeString = hours + ":" + minutes + ":" + seconds + " " + period;
+            document.getElementById("clock").innerHTML = timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+    </script>
 </head>
 <body>
     <div class="container">
@@ -83,6 +108,7 @@
                     </li>
                 </ul>
             </div>
+            <p id="clock">Live Time</p>
         </div>
 
 
