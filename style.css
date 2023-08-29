@@ -116,10 +116,7 @@ body{
 {
     color: #03a9f4;
 }
-.contactInfo .education li
-{
-    margin-bottom: 15px;
-}
+    
 .contactInfo.education h5
 {
     color: #03a9f4;
@@ -222,6 +219,9 @@ p{
     color: rgb(31, 31, 37);
     font-size: 16px;
 }
+
+
+
 .interest h4
 {
     color: #000000;
@@ -236,7 +236,7 @@ p{
     list-style: none;
     color: #333;
     font-weight: 500;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 @media(max-width: 1000px)
@@ -248,7 +248,7 @@ p{
     }
     .interest ul
     {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
@@ -264,10 +264,10 @@ p{
     }
     .interest ul
     {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
-    .skills .box
+     .skills .box
     {
         grid-template-columns: repeat(1,1fr);
-    }
+    } 
 }
